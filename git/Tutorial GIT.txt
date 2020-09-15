@@ -1,3 +1,78 @@
-﻿Tutorial GIT
-Instalação - ok
-Configuração - ok
+﻿Tutorial de Instalação e configuração do VSCODE
+(ok) 1 Conhecer o site do VSCODE
+(ok) 2 Instalação do VSCODE no linux
+ - (ok) sudo apt-get update
+ - (ok) sudo apt-get install software-properties-common apt-transport-https wget
+ - (ok) wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add --
+ - (ok) sudo add-apt-repository “deb [arch=amd64] https://packages.microsoft.com/repos/
+vscode stable main”
+ - (ok) sudo apt-get install code
+
+(ok 3 Instalar o VsCode em portugues
+
+(ok) 4 - Instalar extensões
+ - (ok) PHP intelephense
+ - (ok) Markdown All in One
+ - (ok) Bracket Pair Colorizer 2
+ - (ok) indent-rainbow
+ - (ok) pomodoro-timer
+ - (ok) git-leans
+ - (ok) vscode faker
+ - (ok) ESLint
+ - (ok) presentation mode
+ - (ok) vscode icons
+ - (ok) TODO
+ - (ok) Auto Close Tag
+ - (ok) Auto rename
+ - (ok) Format HTML in PHP
+ - (ok) PHP Getters & Setters
+ - (ok) Theme Monokai
+ - (ok) PHP debug
+ - (ok) PHP code sniffer
+ - (ok) PHP DocBlocker
+ - (ok) PHP Snippets
+ - (ok) Minify
+ - (ok) Wakatime
+
+(ok) 5 - Instalar a font firacode
+ - () habilitar font ligatures
+ 
+(ok) 06 - Alguns atalhos interessantes
+ – Navegar: ctrl + p
+ – Command Palette: ctrl + shift + p
+ – Abrir arquivo lado a lado: ctrl + clique com o mouse no arquivo
+ – Abrir explorador: ctrl + shift + e
+ - Zen Mode: ctrl + k, z
+ - Pular de linha: ctrl + g <numero da linha>
+ - mover linha: alt + pra cima ou alt + pra baixo
+ - duplicar linha pra cima ou pra baixo: alt + shit + pra cima ou pra baixo
+ - deletar uma linha: shift + comand + k
+ - # alterar todos os valores de uma vez: ctrl + f OU CTRL + d
+
+() 08 - Configurações no settings.json
+
+ - (ok) "php.suggest.basic": false,
+ desativar o autocomplete padrão do VS Code, já que eu vou usar o intelephense essa
+configuração só atrapalha.
+
+ - (ok) Configuração do Prettier, para ele formatar sozinho assim que você salvar o arquivo
+Arquivo: /home/iuryprof/Vídeos/Tutorial do VS code Página 2 de 2
+ Obs.: o prettier funciona bem melhor quando se tem o nodejs instalado no sistema
+ - (ok) instalar o nodejs
+ - (ok) instalar o plugin do php no prettier
+ - ~/.vscode/extensions/esbenp.prettier-vscode-*
+ - npm install --save-dev prettier @prettier/plugin-php
+
+ - settings.json
+ "editor.formatOnSave": true,
+ "prettier.tabWidth": 4,
+ "editor.defaultFormatter": "esbenp.prettier-vscode",
+ "editor.formatOnPaste": true,
+ "php.validate.run": "onType",
+
+ - () Para configurar o PHP Code Sniffer eu uso as seguintes configurações:
+ 
+ "phpcs.standard": "PSR2",
+ "phpcs.executablePath": "/home/giovanni/.config/composer/vendor/bin/phpcs"
+ site para download https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
+() 07 Settings Sync
